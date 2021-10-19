@@ -1,0 +1,15 @@
+.button{
+    width: 500px; height: 100px; 
+position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    border: 0;
+    background-color: #8CA1A5;
+    border-radius: 10px;
+}
+.button:hover{
+    cursor: pointer;
+}

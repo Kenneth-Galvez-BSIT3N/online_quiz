@@ -1,0 +1,87 @@
+.content{
+    display: flex;
+}
+.content .left{
+    width: 50%;
+    height: 100vh;
+}
+.left img{
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 11%;
+}
+.left h1{
+    margin: 50px;
+}
+.content .right{
+    width: 50%;
+    display: flex;
+}
+.right .center{
+   width: 50%;
+   height: 300px;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    display: flex;
+}
+.center .teacher,.student{
+    width: 250px;
+    height: 300px;
+    margin-left: 100px;
+    background-color: wheat;
+}
+.teacher div{
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background-color: whitesmoke;
+    box-shadow: 0 0 50px #6D8299;
+    border-radius: 10px;
+    text-align: center;
+}
+.teacher div:hover{
+    background-color: #6D8299;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 24px;
+}
+.teacher img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: #6D8299;
+    padding: 10px;
+}
+.student div{
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background-color: whitesmoke;
+    box-shadow: 0 0 50px #8CA1A5;
+    border-radius: 10px;
+    text-align: center;
+}
+.student div:hover{
+    background-color: #8CA1A5;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 24px;
+}
+.student img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: #8CA1A5;
+    padding: 10px;
+}
+@media (min-width:320){
+
+}

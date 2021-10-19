@@ -1,0 +1,69 @@
+{%  extends 'base.html'%}
+{% block content%}
+<div class="cq_content">
+<div class="left">
+    <button>add question</button>
+    <div class="question-list">
+        <p>Question 1</p>
+    </div>
+</div>
+<div class="middle">
+    <form action="">
+        <input type="number" placeholder="Question number"><br>
+    <input type="text" placeholder="Enter your questions">
+    <br>
+    <label for="">Time limit</label>
+    <br>
+    <div id='true_false'  class="type">
+            <input type="radio" name = "true_false" value="True"><label for="html">True</label><br><input type="radio"  name = "true_false" value="False"><label for="html">False</label>
+    </div>
+    <div id='fill' class="type">
+        <input type="text">
+    </div>
+    <div id='"multiple' class="type">
+
+    </div>
+    <div id="display"></div>
+</form>
+</div>
+<div class="right">
+    <select name="" id="select_time">
+        <option value="10s">10s</option>
+        <option value="30s">30s</option>
+        <option value="45s">45</option>
+        <option value="1m">1m</option>
+    </select>
+    <br>
+    <select name="" id="select_type">
+        <option value="true_false">True or False</option>
+        <option value="fill">Fill in the blanks</option>
+        <option value="multiple">Multiple choices</option>
+    </select>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Start
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        </div>
+        <div class="modal-body">
+          Number of participant
+          <br>
+          COde
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success">Start</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Stop</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+{% endblock content%}

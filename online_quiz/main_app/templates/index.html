@@ -1,12 +1,23 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% block content %}
+<div class='content'>
+    <div class="left">
+        <h1 style="font-size: 100px; text-align: center;">Online Quiz</h1>
+        <img src="../static/images/logo.png" alt="">
+    </div>
+    <div class="right">
+        <div class="center">
+            <div class="teacher">
+                <img src="../static/images/teacher.png" alt="">
+                <div> <br> <h3 style="background-color: transparent;">Teacher</h3></div>
+            </div>
+            <div class="student">
+                <img src="../static/images/student.png" alt="">
+                <div><br><h3 style="background-color: transparent;">Student</h3></div>
+            </div>
+            <br>
+        </div>
+    </div>
+    </div>
+{% endblock content %}
